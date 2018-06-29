@@ -1,0 +1,88 @@
+body {
+    background-image: url(https://tedideas.files.wordpress.com/2017/06/featured_art_solarsystemswater.jpg?w=1500);
+}
+
+.container{
+    margin: 10px;
+}
+
+.row{
+    margin-bottom: 12px;
+}
+
+h1 {
+    text-align: center;
+    background-color:purple;
+    color: white;
+    font-size: 24px;
+    width: 250px;
+    height: 107px;
+    padding-top: 41px;
+    padding-bottom: 22px;
+}
+
+.instructions {
+    text-align: center;
+    color: white;
+    background-color: blue;
+    font-size: 13px;
+    width: 373px;
+    padding-top: 32px;
+    padding-bottom: 66px;
+    padding-left: 4px;
+    padding-right: 4px;
+
+}
+
+.guess{
+    text-align: center;
+    background-color:tan;
+    color:darkblue;
+    font-size: 24px;
+    width: 207px;
+    height: 107px;
+    padding-top: 41px;
+    padding-bottom: 22px;
+    margin-right: 10px;
+}
+
+.winLoss {
+    text-align: center;
+    background-color: white;
+    color: green;
+    font-size: 17px;
+    width: 130px;
+    height: 107px;
+    padding-top: 13px;
+    padding-bottom: 22px;
+}
+
+.yourScore{
+    text-align: left;
+    background-color: grey;
+    color: white;
+    font-size: 14px;
+    width: 208px;
+    height: 53px;
+    padding-top: 21px;
+    padding-bottom: 17px;
+}
+
+.totalScore {
+    text-align: center;
+    background-color: grey;
+    color: white;
+    font-size: 24px;
+    width: 208px;
+    height: 107px;
+    padding-top: 41px;
+    padding-bottom: 22px;
+}
+
+.crystal-image {
+    width: 129px;
+    height: 161px;
+    padding-top: 13px;
+    padding-bottom: 18px;
+    padding-left: 14px;
+}

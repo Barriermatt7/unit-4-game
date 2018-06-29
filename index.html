@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Link css style and reset page-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  
+    <title>Crazy Insane Crystals</title>
+</head>
+
+
+<body>
+<div class="container">
+    <div class="row">
+    <h1>Crazy Insane Crystals</h1>
+    </div>
+
+    <div class="row">
+    <p1 class="instructions">Instructions <br><br><br> You will be givien a random number at the start of the game. <br>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your score.<br><br>You will win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.<br>The value of each crystal is hidden from you until you click on it<br><br>Each time when the game starts, the game will change the values of each crystal</p1>
+    </div>
+    
+    <div class="row">
+        <p1 class="guess">Number to Guess:<span id="number-to-guess"></span>
+        </p1> 
+        <P1 class="winLoss">You lost!!<br><br>Wins: 1<br><br>Losses: 1</P1>
+    </div>
+    
+    <div class="row">
+            <!-- Jewels Images -->
+        <div id="crystals">
+            <img class="crystal-image" src="assets/images/crystal1.jpg" alt="crystals">
+            <img class="crystal-image" src="assets/images/2-Star_Crystal.png" alt="crystals">
+            <img class="crystal-image" src="assets/images/crystal3.jpeg" alt="crystals">
+            <img class="crystal-image" src="assets/images/crystal4.jpg" alt="crystals">
+        </div>
+    </div>
+    
+    <div class="row">
+        <p1 class="yourScore">Your total score is:</p1> 
+    </div>  
+    
+    <div class="row">
+        <p1 class="totalScore">0</p1> 
+    </div>     
+</div>
+
+
+
+<!-- Here we added a link to the jQuery library -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Below is where our JavaScript code will go -->
+<script type="text/javascript">
+
+var targetNumber = 50;
+
+$("#number-to-guess").text(targetNumber);
+
+
+var counter = 0;
+
+$(".crystal-image").on("click",function() {
+
+counter +=10;
+
+     alert("Your new score is: " + counter);
+
+     if (counter === targetNumber) {
+
+         alert("you Win!")
+     }
+
+     else if (counter >= targetNumber) {
+         alert("You Lose!!")
+     }
+     // stopped on act 11.html
+ });
+
+</script>
+</body>
+</html>
